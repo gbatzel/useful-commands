@@ -1,0 +1,8 @@
+###extract first line of each sequence from fasta
+
+grep "^>.*$" input.fasta > output.txt
+
+### given the following description: >tr|Q75U66|Q75U66_DANRE
+### find and replace tr with cf
+
+sed -e 's/^>tr/>cf/' test.fasta
